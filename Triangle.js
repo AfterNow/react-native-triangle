@@ -126,7 +126,9 @@ var PropTypes = require('prop-types')
    render: function() {
      var borderStyles = this._borderStyles();
      return (
-       <View style={[styles.triangle, borderStyles, this.props.style]}/>
+       <View style={[styles.triangle, borderStyles, this.props.style]}>
+			   {this.props.children}
+			 </View>
      )
    },
 
